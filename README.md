@@ -1,7 +1,7 @@
 # Installing the API
 
 1. Start the application by running
- - **docker compose up**
+ - **docker compose up --build**
 
 2. Execute the composer update with:
  - **docker compose exec app composer update**
