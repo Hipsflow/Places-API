@@ -15,4 +15,16 @@ class Place extends Model
         "city",
         "state"
     ];
+
+    protected function filterListing($filter){
+        $placeQuery = Place::query();
+        if ($filter !== null) {
+            $placeQuery->where(function ($query) use ($filter) {
+                $query->where('name', 'like', '%' . $filter . '%')
+                    ->orWhere('city', 'like', '%' . $filter . '%');
+            });
+        }
+        $places = $placeQuery->get();
+        return $places;
+    } 
 }
