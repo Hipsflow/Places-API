@@ -4,6 +4,7 @@
         <title>Laravel</title>
     </head>
     <body >
-        <p>Algo deu errado, tente novamente!</p>
+        <h1>Welcome to the API!</h1> 
+        <p>please refer to the readme for instructions!</p>
     </body>
 </html>
