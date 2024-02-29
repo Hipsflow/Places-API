@@ -54,10 +54,10 @@ Base URL for testing: `http://localhost/api`
 
 ## Delete place
 
-- **Endpoint**: `DELETE /update/place/{id}`
+- **Endpoint**: `DELETE /delete/place/{id}`
 - **Description**: Delete a place when id is provided
 
-## Delete place
+## Detail place
 
 - **Endpoint**: `GET /show/place/{id}`
 - **Description**: Show a place when id is provided
